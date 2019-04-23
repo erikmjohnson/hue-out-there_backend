@@ -2,12 +2,14 @@
 ==============================================
 
 ## 401 JavaScript N12 - Midterm Project
-[![Build Status](https://dev.azure.com/consultations/hue_out_there/_apis/build/status/hue_out_there-clone?branchName=development)](https://dev.azure.com/consultations/hue_out_there/_build/latest?definitionId=5&branchName=development)
+![Build Status](https://travis-ci.com/erikmjohnson/hue-out-ther.svg?branch=master)
 
 ### Author: Sarkis Aghazarian, Alistair Blake, Jessica Elliott, Erik Johnson, Karl Polintan, Anthony Triplett
 
 ### Links and Resources
-* [Azure - Repo](https://dev.azure.com/consultations/hue_out_there/_git/hue_out_there?path=%2FREADME.md&version=GBmaster)
+* [Repo](https://github.com/erikmjohnson/hue-out-ther)
+* [Heroku]
+* [Travis](https://travis-ci.com/erikmjohnson/hue-out-ther)
 ___
 ## Web Application
 This application turns on/off Hue lights by either a single light or all lights.
