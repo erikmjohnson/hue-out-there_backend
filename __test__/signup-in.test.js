@@ -18,7 +18,7 @@ test('/signup', () => {
     return mockRequest.post('/signup')
         .send(user)
         .then(results => {
-            let token = jwt.verify(results.text, process.env.SECRET);
+            let token = jwt.verify(results.text, process.env.SECRET || 'test');
             id = token.id;
             encodeToken = results.text;
             expect(id).toBeTruthy();
@@ -29,7 +29,7 @@ test('/signin', () => {
     return mockRequest.post('/signin')
         .auth(user.username, user.password)
         .then(() => {
-            let token = jwt.verify(encodeToken, process.env.SECRET);
+            let token = jwt.verify(encodeToken, process.env.SECRET || 'test');
             expect(token.id).toEqual(id);
         })
     })
