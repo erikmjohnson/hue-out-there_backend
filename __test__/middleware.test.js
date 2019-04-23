@@ -20,7 +20,7 @@ describe('Testing 404 and error middle', () => {
         return mockRequest.post('/signup')
             .send(user)
             .then(results => {
-                let token = jwt.verify(results.text, process.env.SECRET);
+                let token = jwt.verify(results.text, process.env.SECRET || 'test');
                 id = token.id;
                 encodeToken = results.text;
                 expect(id).toBeTruthy();

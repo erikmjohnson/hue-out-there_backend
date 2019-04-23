@@ -65,3 +65,6 @@ typings/
 
 # DS_store
 .DS_Store
+
+# node module
+node_modules
