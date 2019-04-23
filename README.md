@@ -8,11 +8,11 @@
 
 ### Links and Resources
 * [Repo](https://github.com/erikmjohnson/hue-out-ther)
-* [Heroku]
 * [Travis](https://travis-ci.com/erikmjohnson/hue-out-ther)
 ___
 ## Web Application
-This application turns on/off Hue lights by either a single light or all lights.
+This application turns on/off Hue lights by either a single light or all lights. All commands are strictly done
+through the terminal.
 
 ## Languages and Tools
 
@@ -59,7 +59,6 @@ npm run start
 npm run dbOn
 ```
 On separate terminal tab, you can run the following commands
-
 
 ### Sign up
 ```
@@ -142,8 +141,6 @@ ___
 
 #### `errors`
 * sends error if path is incorrect 
-
-
 
 #### Tests
  To run tests, please use the `npm run test` command.

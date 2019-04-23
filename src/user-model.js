@@ -27,7 +27,7 @@ user.pre('save', function(next) {
     .then(hashedPassword => {
       this.password = hashedPassword;
       next();
-  }).catch(error => {throw err;});
+  }).catch(err => {throw err;});
 });
 
 /**
