@@ -7,13 +7,12 @@
     "start": "node main.js",
     "watch": "nodemon main.js",
     "test-watch": "jest --watchAll",
-    "test": "jest --coverage",
+    "test": "jest",
     "dbOn": "mkdir -p ./db && mongod --dbpath ./db",
     "dbOff": "killall mongod"
   },
   "jest": {
-    "testEnvironment": "node",
-    "testResultsProcessor": "./node_modules/jest-junit-reporter"
+    "testEnvironment": "node"
   },
   "keywords": [],
   "author": "",

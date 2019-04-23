@@ -2,4 +2,7 @@ language: node_js
 node_js:
   - '9'
 script:
-  - npm run test
+  - jest middleware.test.js
+  - jest bridge.test.js
+  - jest signup-in.test.js
+  - jest supergoose.js
