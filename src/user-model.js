@@ -60,7 +60,7 @@ user.methods.generateToken = function() {
   let tokenData = {
     id: this._id,
   };
-  return jwt.sign(tokenData, process.env.SECRET);
+  return jwt.sign(tokenData, process.env.SECRET || 'test');
 };
 
 
