@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-export default class LightInterface extends React.Component {
+export default class LightInterface extends Component {
   render() {
     return(
       <div>
