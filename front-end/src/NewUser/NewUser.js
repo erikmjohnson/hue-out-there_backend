@@ -37,6 +37,7 @@ export default class NewUser extends Component {
             value={this.state.password}
             name='password'
             onChange={this.handleInputChange}/>
+          <p><button type='submit'> Create New User and Login</button></p>
         </form>
       </div>
     )
