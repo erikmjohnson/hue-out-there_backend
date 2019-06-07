@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import LightInterface from './LightInterface/LightInterface';
 import NewUser from './NewUser/NewUser';
 import Login from './Login/Login';
