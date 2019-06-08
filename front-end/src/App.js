@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
-import LightInterface from './LightInterface/LightInterface';
-import NewUser from './NewUser/NewUser';
-import Login from './Login/Login';
+import LightInterface from './components/LightInterface/LightInterface';
+import NewUser from './components/NewUser/NewUser';
+import Login from './components/Login/Login';
 
 export default class App extends Component {
   render() {

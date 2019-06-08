@@ -15,8 +15,9 @@
     "mongoose": "^5.5.3",
     "mongoose-schema-jsonschema": "^1.2.1",
     "morgan": "^1.9.1",
-    "node-hue-api": "^2.4.4",
+    "node-hue-api": "^2.4.5",
     "nodemon": "^1.18.11",
+    "react-redux": "^7.0.3",
     "require-directory": "^2.1.1",
     "supertest": "^4.0.2"
   },
