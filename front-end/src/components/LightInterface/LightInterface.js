@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
+import * as lightCom from '../../action/light-action';
 
-export default class LightInterface extends Component {
+
+class LightInterface extends Component {
+  turnOnAll = () => {
+    return this.props.pDoAllLights();
+  };
   render() {
     return(
       <div>
@@ -21,3 +26,10 @@ export default class LightInterface extends Component {
     )
   }
 }
+  const mapDispatchToProps = dispatch => ({
+    pDoAllLights: () => {
+      return dispatch(lightCom.allLightsOn())
+    }
+  });
+
+  export default connect(null, mapDispatchToProps)(LightInterface);
