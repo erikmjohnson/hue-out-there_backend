@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 
 class Landing extends Component {
 
-  handleSignup = user => {
+  handleSignUp = user => {
     return this.props.pDoSignUp(user);
   };
 
@@ -25,7 +25,7 @@ class Landing extends Component {
     const signUp =
       <div>
         <h1>Sign Up</h1>
-        <AuthForm type='signup' onComplete={this.handleSignup}/>
+        <AuthForm type='signup' onComplete={this.handleSignUp}/>
         <Link to='/'>Already have an Account? Click here to login</Link>
       </div>;
 
