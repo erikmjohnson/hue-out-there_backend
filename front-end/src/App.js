@@ -10,7 +10,7 @@ export default class App extends Component {
       <main>
         <BrowserRouter>
           <h1>Hue Out There?</h1>
-          <Route path='*' component={AuthRedirect}/>
+          <Route path='/' component={AuthRedirect}/>
           <Route exact path="/user" component={LightInterface}/>
           <Route exact path="/signup" component={Landing}/>
           <Route exact path="/" component={Landing}/>
