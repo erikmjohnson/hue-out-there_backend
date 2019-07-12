@@ -68,3 +68,6 @@ typings/
 
 # node module
 node_modules
+
+#DataBase
+db
