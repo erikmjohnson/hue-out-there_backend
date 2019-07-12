@@ -7,7 +7,7 @@ let hue = require('node-hue-api');
  * Connecting to specific bridge, username is unique.
  */
 let HueApi = hue.HueApi;
-let host = "172.16.8.233";
+let host = "172.16.15.33";
 let username = "3RcWD2DoxBwDfmLquhTi8bVpXh7IzhLOw8GpfCe4";
 let api = new HueApi(host, username);
 
