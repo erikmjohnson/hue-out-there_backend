@@ -33,5 +33,27 @@ const lightGroup = (lightNum, status) => {
         .done();
 };
 
+const lightStatus = () => {
+  const lightInfo =[];
+  api.groups()
+    .then(results => {
+
+      results[64].lights.forEach(light => {
+
+        api.lightStatus(light)
+          .then(display => {
+            let obj = {};
+            obj['id'] = `${light}`;
+            obj['status'] = `${display.state.on}`;
+            lightInfo.push(obj);
+            console.log(lightInfo);
+          });
+      });
+    })
+};
+
+
+
+
 /** Exports status' outside of file */
-module.exports = {lightOnOff,lightGroup};
+module.exports = {lightOnOff,lightGroup,lightStatus};
