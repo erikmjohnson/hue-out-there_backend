@@ -64,4 +64,9 @@ authRouter.get('/lightgroup/off', (req, res, next) => {
   res.send(`All lights are off`)
 });
 
+authRouter.get('/status', (req, res, next) => {
+  light.lightStatus();
+  res.send('you did it!')
+});
+
 module.exports = authRouter;
