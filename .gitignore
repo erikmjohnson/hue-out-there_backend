@@ -71,3 +71,6 @@ node_modules
 
 #DataBase
 db
+
+# Package.json
+package.json
