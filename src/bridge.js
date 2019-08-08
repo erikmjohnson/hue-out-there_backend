@@ -41,15 +41,16 @@ const lightStatus = () => {
       results[64].lights.forEach(light => {
 
         api.lightStatus(light)
+
           .then(display => {
+
             let obj = {};
             obj['id'] = `${light}`;
             obj['status'] = `${display.state.on}`;
             lightInfo.push(obj);
-            console.log(lightInfo);
           });
       });
-    })
+    });
 };
 
 
