@@ -69,5 +69,8 @@ typings/
 # node module
 node_modules
 
-#DataBase
+# DataBase
 db
+
+# Package.json
+package-lock.json
