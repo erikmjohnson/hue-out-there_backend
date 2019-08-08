@@ -66,7 +66,7 @@ authRouter.get('/lightgroup/off', (req, res, next) => {
 
 authRouter.get('/status', (req, res, next) => {
   light.lightStatus();
-  res.send('you did it!')
+  res.send('you did it!');
 });
 
 module.exports = authRouter;
