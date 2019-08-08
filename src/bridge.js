@@ -33,24 +33,18 @@ const lightGroup = (lightNum, status) => {
         .done();
 };
 
-const lightStatus = () => {
-  const lightInfo =[];
-  api.groups()
-    .then(results => {
+const lightStatus = async() => {
+  let lightGroups = await api.groups().catch(e => console.log(e));
 
-      results[64].lights.forEach(light => {
+  let lightArray = await Promise.all(lightGroups[64].lights.map(async(light) => {
+    let lightSnarf = await api.lightStatus(light);
+    let obj = {};
+    obj['id'] = `${light}`;
+    obj['status'] = `${lightSnarf.state.on}`;
+    return obj;
+    }));
 
-        api.lightStatus(light)
-
-          .then(display => {
-
-            let obj = {};
-            obj['id'] = `${light}`;
-            obj['status'] = `${display.state.on}`;
-            lightInfo.push(obj);
-          });
-      });
-    });
+    return lightArray;
 };
 
 
