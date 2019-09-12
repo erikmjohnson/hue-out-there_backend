@@ -33,6 +33,10 @@ const lightGroup = (lightNum, status) => {
         .done();
 };
 
+const findBridgeIp = () => {
+
+};
+
 const lightStatus = async() => {
   let lightGroups = await api.groups().catch(e => console.log(e));
 
@@ -51,4 +55,4 @@ const lightStatus = async() => {
 
 
 /** Exports status' outside of file */
-module.exports = {lightOnOff,lightGroup,lightStatus};
+module.exports = {lightOnOff, lightGroup, lightStatus, findBridgeIp};
