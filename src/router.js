@@ -66,7 +66,11 @@ authRouter.get('/lightgroup/off', (req, res, next) => {
 
 authRouter.get('/status', async (req, res, next) => {
   let array = await light.lightStatus();
-  res.send(array);
+  res.json(array);
 });
+
+// authRouter.get('/ip', (req, res, next) => {
+//   let ip = light.findBridgeIp();
+// });
 
 module.exports = authRouter;
